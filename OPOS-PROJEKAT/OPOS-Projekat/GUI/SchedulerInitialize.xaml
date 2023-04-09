@@ -1,0 +1,33 @@
+﻿<Window x:Class="GUI.SchedulerInitialize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="SchedulerInitialize" Height="400" Width="400">
+    <Grid Margin="15,15,15,15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock FontSize="10">Choose an Scheduling Algorithm:</TextBlock>
+            <RadioButton x:Name="First" FontSize="10" VerticalContentAlignment="Center" >FIFO</RadioButton>
+            <RadioButton x:Name="Second" FontSize="10" VerticalContentAlignment="Center" >PRIORITY
+            </RadioButton>
+            <RadioButton x:Name="Third" FontSize="10" VerticalContentAlignment="Center">PRIORITYPREEMPTIVE
+            </RadioButton>
+            <RadioButton x:Name="Fourth" FontSize="10" VerticalContentAlignment="Center" >ROUND ROBIN
+            </RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBlock FontSize="20">Input parralelism level:</TextBlock>
+            <Separator Margin="10, 0, 0, 0"></Separator>
+            <TextBox x:Name="TB" Width="100" Height="27" HorizontalAlignment="Center" VerticalAlignment="Top" Text="?" TextAlignment="Center"></TextBox>
+        </StackPanel>
+        <Button FontSize ="10"  Width="150" Height="50" Grid.Row="2" Click="Button_Click">CONFIRM
+        </Button>
+    </Grid>
+</Window>

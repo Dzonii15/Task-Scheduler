@@ -1,0 +1,20 @@
+﻿<Window x:Class="GUI.Serialization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Serialization" Height="200" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Do you want to load previously saved information [if there is any]?" Margin="10" FontSize="16" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10" Grid.Row="1">
+            <Button x:Name="YESBUTTON" Click="YESBUTTON_Click" Content="Yes" Margin="10" Width="100"  />
+            <Button x:Name="NOBUTTON" Click="NOBUTTON_Click" Content="No" Margin="10" Width="100"  />
+        </StackPanel>
+    </Grid>
+</Window>
